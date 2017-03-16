@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Google Maps With local KML</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills float-right">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#about" data-target="#about">About</a>
+          </li>
+        </ul>
+        <h3 class="text-muted">Google Maps Sample APP with local KML</h3>
+      </div>
+
+      <div class="jumbotron">
+          <h2>Search what Comuna belongs the address in Santiago</h2>
+        <form action="#" onsubmit="showAddress(this.address.value); return false" class="form-inline">
+            <label class="sr-only" for="address">Search</label>
+            <input type="text" name="address" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Address" >
+            <button type="submit" class="btn btn-primary">Go</button>
+        </form>
+        <p>&nbsp;</p>
+        <div id="map" style="height: 400px;"></div>
+      </div>
+
+      <div class="row" id="about">
+        <div class="col-lg-6">
+          <h2>About</h2>
+          <h4>Tools</h4>
+          <ul>
+              <li>NodeJS</li>
+              <li>Bootstrap</li>
+              <li>Yeoman</li>
+              <li>Gulp</li>
+              <li>Google API</li>
+              <li>geoxml3</li>
+              <li>epoly-v3-bower</li>
+          </ul>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Catch me on github</p>
+        <a href="https://github.com/ark4n631">
+            <i class="fa fa-github" style="color:black;"></i>@rk4n631
+        </a>
+      </div>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/epoly-v3-bower/v3_epoly.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <script src="/bower_components/geoxml3/kmz/geoxml3.js"></script>
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/button.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
